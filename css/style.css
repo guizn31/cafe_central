@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(24, 24, 24);
+    background-color: rgb(252, 252, 252);
+}
+
+h1, h2, h3 {
+    color:rgb(163, 116, 14);
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+header {
+    background-color: rgba(214, 151, 16, 0.815);
+    color: rgb(0, 0, 0);
+    padding: 29px 0;
+}
+.logo a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span{
+    color: rgba(177, 136, 3, 0.788)
+}
+
+nav.menu{
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav.menu a{
+    color: white;
+    text-decoration:none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav.menu a:houver{
+    color: rgba(177, 136, 3, 0.788)
+}
+
+.hero{
+    background-color: white;
+    text-align: center;
+    padding: 60px 25 px;
+}
+
+.hero h1{
+    font-size: 36px;
+    color: burlywood
+}
+
+hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primario {
+    background-color: rgba(177, 136, 3, 0.788);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-segundario a {
+    background-color: white;
+    color: rgba(177, 136, 3, 0.788);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: rgba(177, 136, 3, 0.788);
+}
+
+.btn-primario:houver, .btn-segundario:houver{
+    opacity: 1.0;
+}
+
+footer{
+    background-color: rgba(214, 151, 16, 0.815);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+footer a{
+    color: rgba(177, 136, 3, 0.788);
+    text-decoration: none;
+}
