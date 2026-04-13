@@ -3,6 +3,7 @@
     <head>
         <title>Cardápio</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
@@ -10,57 +11,84 @@
         <!-- Cabeçalho reutilizado -->
          <header class="topo"> 
             <div class="logo">
-                <a href="index.html">Cafe<span>Central</span></a>
+                <a href="index.html">Café<span>Central</span></a>
             </div>
             <nav class="menu">
-                <a href="index.html" class="ativo">Início</a>
+                <a href="index.html">Início</a>
                 <a href="sobre.html">Sobre</a>
-                <a href="cardapio.html">Cardápio</a>
+                <a href="cardapio.html" class="ativo">Cardápio</a>
                 <a href="contato.html">Contato</a>
             </nav>
          </header>
 
+        <main>
+            <section class="cardapio">
+                <h2>Cardápio do Café Central</h2>
+                <p>Sabores quentes e fresquinhos para começar bem o dia. Aproveite nossos cafés especiais, lanches artesanais e opções de acompanhamento.</p>
 
-        <!-- Conteúdo da página -->
-        <section class="cardapio">
-            <h2>Nossos Produtos</h2>
-           
-            <!-- Card de Produtos -->
-            <article class="produto">
-                 <!-- Imagem do produto-->
-                 <img src="../img/cafee.png" alt="Café" height="250"> 
-                <!-- Título do produto -->
-                 <h3>Café Preto </h3>
-                 <p> Um café de alta qualidade, com sabor intenso e aroma especial</p>
-                 <strong>Preco:</strong> R$4.99
-            </article>
+                <div class="cardapio-grid">
+                    <article class="produto">
+                        <img src="../img/cafee.png" alt="Café Espresso">
+                        <div class="content">
+                            <h3>Espresso Clássico</h3>
+                            <p>Intenso, encorpado e preparado com grãos selecionados para um sabor marcante.</p>
+                            <strong>R$ 4,99</strong>
+                        </div>
+                    </article>
 
-             <article class="produto">
-                <!-- Imagem do produto -->
-                 <img src="../img/pao.jpg" alt="Pão Francês" height="250">
-                <!-- Título do produto -->
-                 <h3>Pao Frances</h3>
-                 <p> Pão fresco e crocante, ideal para o café da manhã</p>
-                 <strong>Preco:</strong> R$0.99
-            </article>
+                    <article class="produto">
+                        <img src="../img/pao.jpg" alt="Pão Francês">
+                        <div class="content">
+                            <h3>Pão Francês Fresquinho</h3>
+                            <p>Crocrante por fora e macio por dentro, ideal com manteiga ou geleia.</p>
+                            <strong>R$ 0,99</strong>
+                        </div>
+                    </article>
 
-             <article class="produto">
-                <!-- Imagem do produto -->
-                 <img src="../img/queijopao.jpg" alt="Pao de queijo" height="250">
-                <!-- Título do produto -->
-                 <h3>Pao de queijo</h3>
-                 <p> Pão de queijo caseiro, crocante por fora e macio por dentro</p>
-                 <strong>Preco:</strong> R$0.99
-            </article>
-        </section>    
+                    <article class="produto">
+                        <img src="../img/queijopao.jpg" alt="Pão de queijo">
+                        <div class="content">
+                            <h3>Pão de Queijo Artesanal</h3>
+                            <p>Recheado com queijo especial e assado na hora, mais sabor para o seu café.</p>
+                            <strong>R$ 0,99</strong>
+                        </div>
+                    </article>
 
+                    <article class="produto">
+                        <img src="../img/cafee.png" alt="Café com leite">
+                        <div class="content">
+                            <h3>Café com Leite</h3>
+                            <p>Equilíbrio perfeito entre café espresso e leite vaporizado, suave e cremoso.</p>
+                            <strong>R$ 6,49</strong>
+                        </div>
+                    </article>
 
+                    <article class="produto">
+                        <img src="../img/pao.jpg" alt="Torrada com manteiga">
+                        <div class="content">
+                            <h3>Torrada com Manteiga</h3>
+                            <p>Fatias douradas servidas com manteiga artesanal, simples e deliciosa.</p>
+                            <strong>R$ 2,49</strong>
+                        </div>
+                    </article>
 
+                    <article class="produto">
+                        <img src="../img/queijopao.jpg" alt="Café gelado">
+                        <div class="content">
+                            <h3>Café Gelado</h3>
+                            <p>Perfeito para dias quentes, com café filtrado e gelo crocante.</p>
+                            <strong>R$ 7,49</strong>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
 
         <!-- Rodapé reutilizado -->
         <footer class="rodape">
-            <p>® 2026 CafeCentral. Todos os Direitos Reservados</p>
+            <p>® 2026 Café Central. Todos os Direitos Reservados</p>
             <p><a href="contato.html">Entre em Contato</a></p>
-    <script src="js/script.js"></script>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

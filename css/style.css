@@ -1,18 +1,26 @@
 /* configurações gerais */
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(24, 24, 24);
     background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
 }
-body, html {
-    height: 100%;
+
+/* faz o conteúdo crescer e empurrar o rodapé */
+main {
+    flex: 1;
 }
 
 h1, h2, h3 {
-    color:rgb(163, 116, 14);
+    color: rgb(95, 80, 48);
     text-align: center;
 }
 
@@ -25,30 +33,31 @@ p {
 /* cabeçalho e menu */
 
 header {
-    background-color: rgba(214, 151, 16, 0.815);
+    background-color: rgba(133, 67, 5, 0.815);
     color: rgb(0, 0, 0);
-    padding: 29px 0;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .logo a {
     text-decoration: none;
-    color: #ffff;
+    color: #fff;
     font-size: 25px;
     font-weight: bold;
 }
 
-.logo span{
-    color: rgba(177, 136, 3, 0.788)
+.logo span {
+    color: rgba(177, 136, 3, 0.788);
 }
-/* Acessando a Tag.Class*/
-nav.menu{
-    text-align: center;
+
+nav.menu {
     margin-top: 10px;
 }
 
-nav.menu a{
+nav.menu a {
+    text-align: center;
     color: white;
-    text-decoration:none;
+    text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
 }
@@ -58,19 +67,22 @@ nav.menu a.ativo {
     text-decoration: underline;
 }
 
-nav.menu a:hover{
-    color: rgba(177, 136, 3, 0.788)
+nav.menu a:hover {
+    color: rgba(177, 136, 3, 0.788);
 }
 
-.hero{
+/* hero */
+
+.hero {
     background-color: white;
     text-align: center;
     padding: 60px 25px;
 }
 
-.hero h1{
+.hero h1 {
+    text-align: center;
     font-size: 36px;
-    color: burlywood
+    color: burlywood;
 }
 
 .hero p {
@@ -78,14 +90,16 @@ nav.menu a:hover{
     margin-bottom: 20px;
 }
 
-/* Criando botões com hiperlinks */
+/* botões */
 
 .btn-primario {
-    background-color: rgba(177, 136, 3, 0.788);
+    background-color: rgba(95, 44, 28, 0.788);
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-segundario a {
@@ -94,43 +108,38 @@ nav.menu a:hover{
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
-    border: rgba(177, 136, 3, 0.788);
+    border: 1px solid rgba(78, 37, 24, 0.788);
 }
 
-.btn-primario:houver, .btn-segundario:houver{
-    opacity: 1.0;
+/* CORREÇÃO DO HOVER */
+.btn-primario:hover, 
+.btn-segundario a:hover {
+    opacity: 0.8;
 }
 
-/*pagina cardapio*/
+/* cardápio */
 
-.cardapio {
-    gap: 30px 20px;
-    text-align: center;
-    display: flex;
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
 }
 
 .cardapio {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    background-color: #ffff;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: none;
     text-decoration: none;
     color: inherit;
     transition: 0.2s;
 }
 
-.cardapio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    gap: 15px;
-    align-items: stretch;
-}
-
 .cardapio:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgb(24, 24, 24);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .cardapio img {
@@ -141,19 +150,7 @@ nav.menu a:hover{
     border-radius: 6px;
 }
 
-/*rodape*/
-
-footer{
-    background-color: rgba(214, 151, 16, 0.815);
-    color: white;
-    text-align: center;
-    padding: 30px;
-    font-size: 14px;
-}
-footer a{
-    color: rgba(177, 136, 3, 0.788);
-    text-decoration: none;
-}
+/* contato */
 
 .contato {
     padding: 40px 20px;
@@ -162,7 +159,41 @@ footer a{
 .contato form {
     max-width: 500px;
     margin: 0 auto;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     gap: 10px;
+}
+
+/* rodapé */
+
+footer {
+    background-color: rgba(133, 67, 5, 0.815);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: rgba(10, 8, 0, 0.788);
+    text-decoration: none;
+}
+
+form input, form textarea {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login form {
+    
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;  
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 20px;
 }
