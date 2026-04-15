@@ -38,13 +38,7 @@
     color: #555;
 }
 
-/* 
-   ======================================
-    FORMULÁRIO
-   ======================================
-*/
-/* Organiza os elementos do form em coluna e 
-                coloca espaço entre eles */
+
 .form-auth {
     display: flex; /* Ativa o Flexbox */
     flex-direction: column; /* Distribui na vertical */
